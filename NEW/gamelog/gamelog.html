@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games List</title>
+    <link href="/NEW/style1.css" rel="stylesheet">
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "game text"; 
+        }
+        .image1, .image2 {
+            border-radius: 5px;
+            display: none;
+        }
+        .text { 
+            grid-area: text;
+            border-radius: 5px;
+            color: black;
+            font-size: 15px;
+            top: 50%;
+            text-align: left;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(131, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        left: 300px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="/NEW/home.html">HOME</a></li>
+            <li><a href="">LINK</a></li>
+            <li><a href="gamelog.html">GAMES</a></li>
+            <li><a href="/OLD/media.html">MEDIA</a></li>
+            <li><a href="/OLD/links.html">LINKS</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="top">A top area (with a shelf graphic maybe?) with my fav games</div>
+        <div class="mid">
+        <div class="left">
+            <div class="slideshow-container">
+                <div class="image1">
+                  <img src="images/gamelog/alittletotheleft.jpg">
+                </div>
+              
+                <div class="image1">
+                  <img src="images/gamelog/atlyss.jpg">
+                </div>
+              
+                <div class="image1">
+                  <img src="images/gamelog/bg3.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            Ough lists of games I own, games I'm actively playing, and games I've 'completed'.<br>Have it be a gallery of the game image from steam (you can get the image in a folder).</div>
+        <div class="right">Second section with info on a game and how much I enjoyed the games (personal recommendations and such)</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id='furryring'>
+            <script type="text/javascript" src="https://furryring.neocities.org/onionring-variables.js"></script>
+            <script type="text/javascript" src="https://furryring.neocities.org/onionring-widget.js"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>        

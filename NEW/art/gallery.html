@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gallery</title>
+    <link href="gallery.css" rel="stylesheet" type="text/css" media="all">
+    <script src="gallery.js"></script>
+</head>
+<body>
+    <!-- huge inspiration from https://mawchine.neocities.org/archive 's picrew repository -->
+
+    <header>
+        <h1></h1>
+        <p></p>
+        <p>by <a href="https://venomoustia.neocities.org/">VT</a></p>
+
+        <div id="item-counter">total: ...more than one (javascript didnt load)</div>
+
+        <hr>
+
+        <div id="tag-buttons">
+            <button class="tag" title="ocs"></button>
+            <button class="tag" title="wip"></button>
+            <button class="tag" title="carrim"></button>
+            <button class="tag" title="crack-art"></button>
+            <button class="tag" title="pixel-art"></button>
+            <button class="tag color-coded" title="nsfw"></button>
+            <button class="tag color-coded" title="gore"></button>
+            <button id="reset">clear selection</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="gallery">
+
+            <div class="item" data-tags="ocs carrim crack-art">
+                <img class="item-img" 
+                src="img/CarrimStare.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Carrim Staring at You</h1></div>
+                    <div class="item-desc">
+                        <p>Redraw of the funny haha 'Little Goober' image. Source of the artist for the OG is unfortunately lost to me. Includes alts:</p>
+                        <img src="img/CarrimStareBlush.png" width="200px">
+                        <img src="img/CarrimStareBlushClown.png" width="200px">
+                        <img src="img/CarrimStareClown.png" width="200px">
+                        <img src="img/CarrimStareClean.png" width="200px">
+                    </div>
+                    <div class="item-date"><date>26/08/2025</date></div>
+                </div>
+            </div>
+
+            <div class="item crop top-center" data-tags="ocs carrim crack-art">
+                <img class="item-img" 
+                src="img/carrim3.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Carrim and Dess</h1></div>
+                    <div class="item-desc"></div>
+                    <div class="item-date"><date>24/07/2024</date></div>
+                </div>
+            </div>
+
+            <div class="item crop top-center hide" data-tags="ocs wip carrim gore">
+                <img class="item-img" 
+                src="img/carrimwip.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Carrim Watches Always</h1></div>
+                    <div class="item-desc"><p></p></div>
+                    <div class="item-date"><date></date></div>
+                </div>
+            </div>
+
+            <div class="item" data-tags="pixel-art">
+                <img class="item-img" 
+                src="img/Sprite-0001.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Lucy Attack!</h1></div>
+                    <div class="item-desc"><p>2025 Artfight Attack of a random OC</p>
+                                           <a href="https://artfight.net/attack/8825465.lucy-attack">Link to Attack</a></div>
+                    <div class="item-date"><date>02/07/2025</date></div>
+                </div>
+            </div>
+
+            <div class="item" data-tags="pixel-art">
+                <img class="item-img" 
+                src="img/Sprite-0002.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Sylvie Attack!</h1></div>
+                    <div class="item-desc"><p>2025 Artfight Attack of a random OC</p>
+                                           <a href="https://artfight.net/attack/9425477.sylvie-attack">Link to Attack</a></div>
+                    <div class="item-date"><date>03/07/2025</date></div>
+                </div>
+            </div>
+
+            <div class="item" data-tags="pixel-art">
+                <img class="item-img" 
+                src="img/Sprite-0005.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Marian Attack!</h1></div>
+                    <div class="item-desc"><p>2025 Artfight Attack of a friend's OC</p>
+                                           <a href="https://artfight.net/attack/11311093.marian-attack">Link to Attack</a></div>
+                    <div class="item-date"><date>15/07/2025</date></div>
+                </div>
+            </div>
+
+            <div class="item crop" data-tags="crack-art">
+                <img class="item-img" 
+                src="img/Illustration10.png" 
+                alt="" 
+                loading="lazy">
+                <div class="item-info">
+                    <div class="item-title"><h1>Danish Accusation</h1></div>
+                    <div class="item-desc"><p>Did this as a dumb doodle, when I had an inkling of an idea, that a person in my fandom circles was a fellow Dane (I was wrong)</p></div>
+                    <div class="item-date"><date>20/06/2025</date></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>gallery template 1.1 by <a href="https://werewolf-girlfriend.neocities.org">werewolf-girlfriend</a></p>
+    </footer>
+
+    
+    <!-- to top button -->
+    <button id="to-top-btn" title="Back to the top">^</button>
+
+    <!-- lightbox container -->
+    <div id="lightbox">
+        <span id="close-btn">&times;</span>
+
+        <div class="flex">
+            <!-- main lightbox image -->
+            <div id="lightbox-img">
+                <img src="" alt="">
+            </div>
+
+            <!-- info, not necessarily filled out for every gallery item -->
+            <div id="lightbox-info">
+                <div id="lightbox-title"></div>
+
+                <div id="lightbox-desc"></div>
+
+                <div id="lightbox-date"></div>
+
+                <ul id="lightbox-tags"></ul>
+
+                <!-- previous and next buttons + progress bar -->
+                <div id="lightbox-nav">
+                    <button id="prev-btn">&lt;--</button>
+                    <span id="progress"></span>
+                    <button id="next-btn">--&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
