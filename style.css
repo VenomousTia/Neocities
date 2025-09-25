@@ -183,6 +183,26 @@ Links outside the nav-element will NOT be affected by this */
     text-decoration: none;
 }
 
+/*  table {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #D7EFBF;
+    }
+
+    th {
+      background-color: #334b54;
+      border-width: 1px;
+      border-style: dotted;
+      border-color: #889F73;
+    }
+  
+    td {
+      background-color: #365656;
+      border-width: 1px;
+      border-style: dotted;
+      border-color: #889F73;
+    }
+
 /* Similarly as class, id can be used to categorize elements once more, this time with the value id="value".
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
