@@ -106,35 +106,6 @@ h3 {
     grid-area: main;
     background-color: var(--main);
     padding: 1rem 1rem 2rem 1rem;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 5% 0px; 
-    grid-template-areas: 
-      "top"
-      "mid"
-      "bot"; 
-}
-.top { 
-    grid-area: top;
-    background-color: var(--aside);
-    border-radius: 5px;
-}
-.mid { 
-    grid-area: mid;
-    background-color: var(--aside);
-    border-radius: 5px;
-    display: grid; 
-    grid-template-columns: 35% 65%; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "left right"; 
-}
-.bot { 
-    grid-area: bot;
-    background-color: var(--aside);
-    border-radius: 5px;
 }
 
 .aside {
@@ -183,25 +154,41 @@ Links outside the nav-element will NOT be affected by this */
     text-decoration: none;
 }
 
-/*  table {
+.mainmedia {
+    grid-area: main;
+    background-color: var(--main);
+    padding: 1rem 0rem 1rem 0rem;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+    th {
+      background-color: var(--third);
       border-width: 1px;
       border-style: solid;
-      border-color: #D7EFBF;
+      border-color: var(--main);
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    td {
+      background-color: var(--aside);
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--main);
     }
 
-    th {
-      background-color: #334b54;
-      border-width: 1px;
-      border-style: dotted;
-      border-color: #889F73;
-    }
-  
-    td {
-      background-color: #365656;
-      border-width: 1px;
-      border-style: dotted;
-      border-color: #889F73;
-    }
+    ul.media {
+            list-style-type: none;
+            padding: 5px;
+        }
+    /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. Thus, the lists on the 'MEDIA' page are unique.*/
+        ul.media li {
+            padding-bottom: 2px;
+        }
+        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. Here, this is done to create space between each list item, for better readability.*/
+    
 
 /* Similarly as class, id can be used to categorize elements once more, this time with the value id="value".
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
