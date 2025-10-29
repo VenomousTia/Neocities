@@ -18,8 +18,8 @@ You can make a universal design for your website, by using a single external she
     --divider: #A7D8F1;
 
     /* Coming from sadgrl's layout maker, these variables refer to images by name instead of a url-link. These work well for background images that repeat throughout your site */
-    --header-image: url('public/images/VRC4.png');
-    --body-bg-image: url('public/images/spacebackground.png');
+    --header-image: url('/images/VRC4.png');
+    --body-bg-image: url('/images/spacebackground.png');
 }
 
 * {
