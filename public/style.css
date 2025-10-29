@@ -106,6 +106,7 @@ h3 {
     grid-area: main;
     background-color: var(--main);
     padding: 1rem 1rem 2rem 1rem;
+    overflow: auto;
 }
 
 .aside {
@@ -152,6 +153,12 @@ Links outside the nav-element will NOT be affected by this */
 .nav a:hover {
     color: #A7D8F1; /* This color is visually different from normal. This is in place of the underline that would normally appear under a link when hovered.*/
     text-decoration: none;
+}
+
+.updates {
+    height: 250px;
+    overflow: auto;
+    border: 1px var(--divider) dotted;
 }
 
 .mainmedia {
