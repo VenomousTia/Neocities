@@ -19,7 +19,7 @@ You can make a universal design for your website, by using a single external she
 
     /* Coming from sadgrl's layout maker, these variables refer to images by name instead of a url-link. These work well for background images that repeat throughout your site */
     --header-image: url('/images/VRC4.png');
-    --body-bg-image: url('/images/spacebackground.png');
+    --body-bg-image: url('images/spacebackground.png');
 }
 
 * {
@@ -201,14 +201,13 @@ table {
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
 /* the id will overwrite any styling done to the standard element, as long as you include id="value". In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
-#one {
-    /* Empty for now */
-}
-#two {/* Empty for now */
-}
-#three {
-    /* Empty for now */
-}
+#page {
+    height:30vmin; 
+    right: 0em;
+    bottom: 0em;
+    position: fixed;
+    width: auto;
+    }
 
 /* This section is for any custom fonts you may want 
 You can find various fonts online. Google has it's own collection of fonts, and has the benefit that you can directly import fonts from that site. There's no need to host the font yourself, though it is still recommended for the sake of preserving online media. 
