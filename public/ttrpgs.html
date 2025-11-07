@@ -7,38 +7,37 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
     #dndmain {
-      background-color: #354559;
-      flex: 1;
-      padding: 20px;
-      order: 2;
-      border-radius: 3px 20px 20px 3px;
+        background-color: #354559;
+        flex: 1;
+        padding: 20px;
+        order: 2;
+        border-radius: 3px 20px 20px 3px;
     }
-    
-    .pics {
-      border: 4px double #202947;
-    }
+      .pics
+      {
+         border: 4px double #202947;
+        }
 
-    img {
-      width:120px; /* This sets the width for every image. */
-      height: 120px; /* This sets the height for every image. Same as Width to create square images. */
-    }
-      
-    .main {
-      overflow: visible;
-    }
+      img {
+              width:125px; /* this sets the width for every image */
+              height:125px; /* this sets the height for every image. Try setting it to 'auto' and see how it looks weird since every image has a slightly different height? */
+          }
 
-    img:hover {
-      transform:scale(1.7); /* This scales up the image when you hover over it. */
-      object-fit:contain; /* This keeps the aspect ratio previously set by img. */
-    }
+      .main > div {
+              width:125px; /* this should match the image height */
+              height:125px; /* this should match the image width */
+          }
+      img:hover {
+              transform:scale(2); /* this scales up the image when you hover over it */
+              object-fit:contain; /* this keeps the aspect ratio of the original images*/
+              }
               
     </style>
   </head>
 <body>
 <div class="container">
-  <div class="header"></div>
-
-  <div class="nav">
+<div class="header"></div>
+<div class="nav">
     <ul>
         <li><a href="/home.html">HOME</a></li>
         <li><a href="/art/gallery.html">ART</a></li>
@@ -47,18 +46,10 @@
         <li><a href="/ttrpgs.html">TTRPGS</a></li>
         <li><a href="/sources.html">SOURCES</a></li>
     </ul>
-  </div>
+</div>
+<div class="aside"></div>
 
-  <div class="aside">
-    <ul>
-      <li>Dice</li>
-      <li>Section 2</li>
-      <li>Section 3</li>
-    </ul>
-    <p>Interactions TBA</p>
-  </div>
-
-  <div class="main">
+<div class="main">
     <!-- DICE STARTS HERE -->
         <img class="pics" loading="lazy" src="/images/dndimages/Dice/Ace.jpg" title="Ace Dice">
         <img class="pics" loading="lazy" src="/images/dndimages/Dice/BlueTeal.jpg" title="Teal w Blue Glitter & GiTD">
@@ -85,12 +76,11 @@
         <img class="pics" loading="lazy" src="/images/dndimages/Dice/SteelBlue.jpg" title="Blue & Grey Marble">
         <img class="pics" loading="lazy" src="/images/dndimages/Dice/WarmGreen.jpg" title="Green & Yellow Marble">
         <img class="pics" loading="lazy" src="/images/dndimages/Dice/Wonky.jpg" title="Holo Flakes in Pink Suspension (WONKY D20)">
-  </div>
-  <!-- DICE END HERE -->
-
-  <div class="footer">
-  </div>
 </div>
-</body>
+<!-- DICE END HERE -->
 
+<div class="footer"></div>
+</div>
+
+</body>
 </html>
