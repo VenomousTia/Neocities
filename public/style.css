@@ -201,12 +201,18 @@ table {
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
 /* the id will overwrite any styling done to the standard element, as long as you include id="value". In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
-#page {
+#PagedollImage {
     height:30vmin; 
-    right: 0em;
-    bottom: 0em;
+    right: 2px;
+    bottom: 2px;
     position: fixed;
     width: auto;
+    filter: drop-shadow(0px 0px 3px #ffaa5e);
+    transition: transform 1.7s ease;
+    }
+/* just like with the navigation links before, which was a class changing under certain conditions, so too can an id change under those same conditions. Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to tilt when hovered over. */
+#PagedollImage:hover {
+    transform: rotateY(360deg);
     }
 
 /* This section is for any custom fonts you may want 
