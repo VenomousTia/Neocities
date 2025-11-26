@@ -214,6 +214,7 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
 #PagedollImage:hover {
     transform: rotateY(360deg);
     }
+
 #music-player-container {
     position: fixed;
     bottom: 10px;
@@ -222,7 +223,6 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
     align-items: center;
     transition: transform 0.3s ease-in-out;
 }
-
 .music-player {
     display: flex;
     align-items: center;
@@ -231,7 +231,6 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
     padding: 10px 10px;
     border: var(--divider); /* Make the border however you want */
 }
-
 .music-player button {
     background-color: var(--third); /* Previous, Play/Pause, and Next button color */
     color: var(--divider); /* Symbol colors */
@@ -267,7 +266,6 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
     font-size: 14px;
     color: var(--text); /* Volume percentage text*/
 }
-
 #song-info {
     display: flex;
     flex-direction: column;
@@ -282,7 +280,6 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
 #song-artist {
     font-style: italic;
 }
-
 /* Button to hide the player */
 #toggle-button {
     background-color: var(--main);
@@ -331,4 +328,11 @@ I have chosen to host my font on my own neocities site. Thus, I only need to ref
         url('./fonts/Kodchasan-BoldItalic.ttf');
     font-style: italic;
     font-weight: bold;
+}
+
+/* This hides elements with the class 'hideonphone' whenever someone is on a device with a small width. Note that elements can have multiple classes, thus your main or footer can also have the hideonphone class */
+@media screen and (max-width: 800px){
+    .hideonphone {
+        display: none;
+    }
 }
