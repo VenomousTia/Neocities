@@ -5,6 +5,6 @@ stamps/
 userboxes/
 img/
 images/
-.png
-.jpg
-.mp3
+*.png
+*.jpg
+*.mp3
