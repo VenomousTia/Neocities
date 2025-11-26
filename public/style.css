@@ -19,7 +19,7 @@ You can make a universal design for your website, by using a single external she
 
     /* Coming from sadgrl's layout maker, these variables refer to images by name instead of a url-link. These work well for background images that repeat throughout your site */
     --header-image: url('/images/VRC4.png');
-    --body-bg-image: url('/images/spacebackground.png');
+    --body-bg-image: url('images/spacebackground.png');
 }
 
 * {
@@ -201,6 +201,19 @@ table {
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
 /* the id will overwrite any styling done to the standard element, as long as you include id="value". In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
+#PagedollImage {
+    height:30vmin; 
+    right: 2px;
+    bottom: 2px;
+    position: fixed;
+    width: auto;
+    filter: drop-shadow(0px 0px 3px #ffaa5e);
+    transition: transform 1.7s ease;
+    }
+/* just like with the navigation links before, which was a class changing under certain conditions, so too can an id change under those same conditions. Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to tilt when hovered over. */
+#PagedollImage:hover {
+    transform: rotateY(360deg);
+    }
 #music-player-container {
     position: fixed;
     bottom: 10px;
