@@ -158,9 +158,10 @@ Links outside the nav-element will NOT be affected by this */
 }
 
 .updates {
-    height: 300px;
+    height: 400px;
     overflow: auto;
     border: 1px var(--divider) dotted;
+    background-color: var(--aside);
 }
 
 .mainmedia {
