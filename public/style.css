@@ -38,17 +38,14 @@ body {
     color: var(--text);
     font-family: Kodchasan, serif;
     width: 60%;
-    max-width: 100%;
     margin: auto;
     background-image: var(--body-bg-image);
 }
 
 /* This section is for all your class attributes. The class attribute allows you to edit the appearance of all elements under that class. 
-Like RPG classes: You can have a melee class, a ranged class, and a magic class. The elements inside these class are then the people of those classes. */
-
-/* The class attribute is also good for categorizing different topics that your elements are about. Elements about a certain fandom can have their class be known as "fandom" or as the specific media, while elements about music can be categorized under the "music" class */
-
-/* The class is especially useful for grids, an easy way to define the size of individual elements. By putting them in a grid and changing the size of each grid-cell, the elements inside will be forced to fit those sizes. */
+Like RPG classes: You can have a melee class, a ranged class, and a magic class. The elements inside these class are then the people of those classes. 
+The class attribute is also good for categorizing different topics that your elements are about. Elements about a certain fandom can have their class be known as "fandom" or as the specific media, while elements about music can be categorized under the "music" class 
+The class is especially useful for grids, an easy way to define the size of individual elements. By putting them in a grid and changing the size of each grid-cell, the elements inside will be forced to fit those sizes. */
 
 /* this refers to all elements with the value: class="container" */
 .container {  display: grid;
@@ -64,12 +61,14 @@ Like RPG classes: You can have a melee class, a ranged class, and a magic class.
   }
 
 /* by the same logic, this refers to all elements with the values depicted" */
-/* This will edit all elements listed before the open bracket. If you later (or earlier) on decide to then edit one of these elements on its own, it will then overwrite this styling bracket */
+/* This will edit all elements listed before the open bracket. 
+If you later (or earlier) on decide to then edit one of these elements on its own, it will then overwrite this styling bracket */
 .header, .nav, .main, .aside, .footer, .top, .mid, .bot {
     padding: 1rem;
 }
 
-/* Similar as just above, but here we edit all headings at once. This is useful for universal things like having them all share the same font. */
+/* Similar as just above, but here we edit all headings at once. 
+This is useful for universal things like having them all share the same font. */
 h1, h2, h3, h4 {
     font-family: Kodchasan, serif;
     color: var(--title);
@@ -130,16 +129,19 @@ a {
     color: #ffffff;
 }
 
-/* .nav ul and .nav li work together to create a nice, horizontal navigation bar. .Nav li makes it horizontal, .nav ul makes it spaced aesthetically pleasingly.*/
+/* .nav ul and .nav li work together to create a nice, horizontal navigation bar. 
+.Nav li makes it horizontal, .nav ul makes it spaced aesthetically pleasingly.*/
 
 .nav ul {
     display: flex;
     justify-content: space-evenly;
-    /* display and justify-content work together to center and evenly space each link in the navigation bar. Adding or removing any new links will realign all links so that they are still evenly spaced.*/
+    /* display and justify-content work together to center and evenly space each link in the navigation bar. 
+    Adding or removing any new links will realign all links so that they are still evenly spaced.*/
 }
 .nav li {
     display: inline;
-    /* Display: inline is what allows the links in navigation to be horizontal. They put the link 'in-line' with the rest of the text (and thus each other), instead of putting each of them on an individual line.*/
+    /* Display: inline is what allows the links in navigation to be horizontal. 
+    They put the link 'in-line' with the rest of the text (and thus each other), instead of putting each of them on an individual line.*/
 }
 
 /* This formats links inside the .nav-element. 
@@ -190,17 +192,21 @@ table {
             list-style-type: none;
             padding: 5px;
         }
-    /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. Thus, the lists on the 'MEDIA' page are unique.*/
+    /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. 
+    Thus, the lists on the 'MEDIA' page are unique.*/
         ul.media li {
             padding-bottom: 2px;
         }
-        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. Here, this is done to create space between each list item, for better readability.*/
+        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. 
+        Here, this is done to create space between each list item, for better readability.*/
     
 
 /* Similarly as class, id can be used to categorize elements once more, this time with the value id="value".
-Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
+Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. 
+We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
-/* the id will overwrite any styling done to the standard element, as long as you include id="value". In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
+/* the id will overwrite any styling done to the standard element, as long as you include id="value". 
+In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
 #PagedollImage {
     height:30vmin; 
     right: 2px;
@@ -210,13 +216,15 @@ Continuing the RPG metaphor, ids are secondary characterics, let's say species/r
     filter: drop-shadow(0px 0px 3px #ffaa5e);
     transition: transform 1.7s ease;
     }
-/* just like with the navigation links before, which was a class changing under certain conditions, so too can an id change under those same conditions. Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to tilt when hovered over. */
+/* just like with the navigation links before, which was a class changing under certain conditions, so too can an id change under those same conditions. 
+Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to tilt when hovered over. */
 #PagedollImage:hover {
     transform: rotateY(360deg);
     }
 
-/* This section is for any custom fonts you may want 
-You can find various fonts online. Google has it's own collection of fonts, and has the benefit that you can directly import fonts from that site. There's no need to host the font yourself, though it is still recommended for the sake of preserving online media. 
+/* This section is for any custom fonts you may want. 
+You can find various fonts online. Google has it's own collection of fonts, and has the benefit that you can directly import fonts from that site. 
+There's no need to host the font yourself, though it is still recommended for the sake of preserving online media. 
 I have chosen to host my font on my own neocities site. Thus, I only need to refer to the folder they exist in, rather than the website they're hosted on. */
 @font-face {
     font-family: 'Kodchasan';
@@ -249,9 +257,29 @@ I have chosen to host my font on my own neocities site. Thus, I only need to ref
     font-weight: bold;
 }
 
-/* This hides elements with the class 'hideonphone' whenever someone is on a device with a small width. Note that elements can have multiple classes, thus your main or footer can also have the hideonphone class */
+/* This is for any viewscreens with a smaller width, usually phones. 
+It also responds to when someone's browser window is similar small in width, such as in cases where one has two or more windows side-by-side. */
 @media screen and (max-width: 800px){
+    /* This hides elements with the class 'hideonphone' whenever someone is on a device with a small width. 
+    Note that elements can have multiple classes, thus your main or footer can also have the hideonphone class.
+    In my case, I use 'hideonphone' to hide the sidebar,  */
     .hideonphone {
         display: none;
+    }
+
+    body {
+        width: auto;
+    }
+
+    .images {
+        flex-wrap: wrap;
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 2rem;
     }
 }
