@@ -7,26 +7,29 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-  	<!-- PAGE DOLL -->
-<img id="pagedoll" src="https://venomoustia.neocities.org/Blinkies,%20Buttons%20&%20Badges/pagedoll.png" style="max-height:300px;right: 0em;bottom: 0em;position: fixed;width: auto;"> 
-  <!-- HEADER !-->
-  <div id="container"><div id="header"></div>
-    <div id="headerArea">
-    <!-- NAVIGATION BAR !-->
-    <nav id="navbar" style="margin-bottom: 10px;"><ul>
-      <li><a href="/home.html" title="YOU'RE HERE"><img src="/images/venomoustia.gif" alt="button"></a></li>
-      <li><a href="/home.html">Home</a></li>
-      <li><a href="/dndimages/dndndice.html">DnD</a></li>
-      <li><a href="/not_found.html">Shrines</a></li>
-      <li><a href="/media.html">Media</a></li>
-      <li><a href="/links.html">Links</a></li>
-      <li><a href="/home.html" title="YOU'RE HERE"><img src="/images/venomoustia.gif" alt="button"></a></li>
-      </ul>
-    </nav>
-  </div>
-    <h1>Page Not Found</h1>
-    <p>The requested page was not found.</p>
-    <p>BITES YOU BITES YOU BITES YOU</p>
+    <div class="container">
+    <div class="header"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="/art/gallery.html">ART</a></li>
+            <li><a href="/not_found.html">GAMES</a></li>
+            <li><a href="/media.html">MEDIA</a></li>
+            <li><a href="/ttrpgs.html">TTRPGS</a></li>
+            <li><a href="/sources.html">SOURCES</a></li>
+        </ul>
     </div>
+    <div class="main">
+      <h1>Page Not Found</h1>
+      <p>The requested page was not found.</p>
+      <p>BITES YOU BITES YOU BITES YOU</p>
+    </div>
+    <div class="footer"></div>
+
+    <img id="PagedollImage" class= "hideonphone" alt="Pagedoll" src="images/pagedoll/img0.png">
+      <script>
+        document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 12) + ".png";
+      </script>
+  </div>  
   </body>
 </html>

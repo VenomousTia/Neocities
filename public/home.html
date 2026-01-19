@@ -22,7 +22,7 @@
         <ul>
             <li><a href="/home.html">HOME</a></li>
             <li><a href="/art/gallery.html">ART</a></li>
-            <li><a href="/gamelog/gamelogwip.html">GAMES</a></li>
+            <li><a href="/not_found.html">GAMES</a></li>
             <li><a href="/media.html">MEDIA</a></li>
             <li><a href="/ttrpgs.html">TTRPGS</a></li>
             <li><a href="/sources.html">SOURCES</a></li>
@@ -41,6 +41,7 @@
     <div class="main">
         <h1>BOO! Scares you with my autism</h1>
         <div class="updates">
+          <p>06-01-2025:<br>Updated Mobile layout + added more images to the pagedoll, as well as adding the pagedoll to other parts of the site.</p>
           <p>05-01-2025:<br> Quick added the increment button on home-page. Music player will have to wait, as I will have to figure out a way to incorporate scmplayer's url-link feature into it, instead of referring to .mp3 files.</p>
           <p>26-11-2025:<br>Added <a href="https://july.lol/musicplayer">july.lol's music player</a> to home page. Will have to add it everywhere else as well, perhaps by looking at how <a href="https://github.com/cshum/scm-music-player">scmplayer</a> (which I've used before) does it. NOTE: scmplayer's website no longer functions, but the code is still available on github.</p>
           <p>06-11-2025:<br>Attempting to make script for a pagedoll that changes on every page refresh. Additionally, scrapping current header to turn it into the button scroll from the old site. This is due to adding NavLinks, which lengthened the main content area. (Though I could alternatively make a second aside on the right for it and other things (like the pagedoll))</p>
@@ -59,9 +60,9 @@
     <div class="footer">
     </div>
 
-<img id="PagedollImage" alt="Pagedoll" src="images/pagedoll/img0.png">
+<img id="PagedollImage" class= "hideonphone" alt="Pagedoll" src="images/pagedoll/img0.png">
 <script>
-  document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 5) + ".png";
+  document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 12) + ".png";
 </script>
 
 </div>
