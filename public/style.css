@@ -169,38 +169,6 @@ Links outside the nav-element will NOT be affected by this */
     background-color: var(--main);
     padding: 1rem 0rem 1rem 0rem;
 }
-table {
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-    th {
-      background-color: var(--third);
-      border-width: 1px;
-      border-style: solid;
-      border-color: var(--main);
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-    td {
-      background-color: var(--aside);
-      border-width: 1px;
-      border-style: solid;
-      border-color: var(--main);
-    }
-
-    ul.media {
-            list-style-type: none;
-            padding: 5px;
-        }
-    /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. 
-    Thus, the lists on the 'MEDIA' page are unique.*/
-        ul.media li {
-            padding-bottom: 2px;
-        }
-        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. 
-        Here, this is done to create space between each list item, for better readability.*/
-    
 
 /* Similarly as class, id can be used to categorize elements once more, this time with the value id="value".
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. 

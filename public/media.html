@@ -8,7 +8,54 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <style></style>
+    <style>
+      .mainmedia {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem 0rem 1rem 0rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "creator long semi"
+        "mid short anim"
+        "ttrpg cartoon misc";
+      }
+
+    .creator, .long, .semi, .mid, .short, .anim, .ttrpg, .cartoon, .misc {
+      table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      th {
+        background-color: var(--third);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--main);
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      td {
+        background-color: var(--aside);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--main);
+      }
+
+      ul.media {
+            list-style-type: none;
+            padding: 5px;
+      }
+    }
+      /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. 
+      Thus, the lists on the 'MEDIA' page are unique.*/
+        ul.media li {
+          padding-bottom: 2px;
+        }
+        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. 
+        Here, this is done to create space between each list item, for better readability.*/
+    </style>
   </head>
   <body>
     <div class="container">
@@ -34,7 +81,7 @@
         <tr>
         
           <!-- CONTENT CREATORS !-->
-          <td><ul class="media">
+          <td><ul class="media creators">
             <li><a href="https://www.youtube.com/@supereyepatchwolf3007">Super Eyepatch Wolf</a></li>
             <li><a href="https://www.youtube.com/@kkclue">kkclue</a></li>
             <li><a href="https://www.youtube.com/@JacobGeller">Jacob Geller</a></li>
@@ -56,7 +103,7 @@
           </ul></td>
           
           <!-- LONG FORM ESSAYS 50-1+ HR !-->
-          <td><ul class="media">
+          <td><ul class="media long">
             <li><a href="https://www.youtube.com/watch?v=jQHU9m90VLU">the tale of tamagotchi: the never-ending rabbit hole.</a></li>
             <li><a href="https://www.youtube.com/watch?v=5wAo54DHDY0">MyHouse.WAD - Inside Doom's Most Terrifying Mod</a></li>
             <li><a href="https://www.youtube.com/watch?v=i8DLYqeU8rY">The Pink Cat that Stole the Dream</a></li>
@@ -71,7 +118,7 @@
           </ul></td>
           
           <!-- SEMI-LONG FORM ESSAYS 30-50 MIN !-->
-          <td><ul class="media">
+          <td><ul class="media semi">
             <li><a href="https://www.youtube.com/watch?v=bYKOw8Ao9t8">Villains in Wrestling: Making People Hate You</a></li>
             <li><a href="https://www.youtube.com/watch?v=qFyCJU3AFSA">The Bizarre World of Fake Psychics, Faith Healers, and Mediums</a></li>
             <li><a href="https://www.youtube.com/watch?v=DQQdnve5fQk">Judaism and Whiteness in Wolfenstein</a></li>
@@ -93,7 +140,7 @@
         <tr>
         
           <!-- MEDIUM ESSAYS 15-30 MIN !-->
-          <td><ul class="media">
+          <td><ul class="media mid">
             <li><a href="https://www.youtube.com/watch?v=usSfgHGEGxQ">Games, Schools, and Worlds Designed for Violence</a></li>
             <li><a href="https://www.youtube.com/watch?v=4SNVWWJ-dJw&t">Did He Radicalize You?</a></li>
             <li><a href="https://www.youtube.com/watch?v=AbJrslGZx2g">the tale of i-dog: the ipod accessory that ruled the world</a></li>
@@ -110,7 +157,7 @@
           </ul></td>
           
           <!-- SHORT ESSAYS UNDER 15 MIN !-->
-          <td><ul class="media">
+          <td><ul class="media short">
             <li><a href="https://www.youtube.com/watch?v=-SoFoYK_5vw&t">The living War Ecosystem where you don’t matter</a></li>
             <li><a href="https://www.youtube.com/watch?v=T5x1t7hjLRI&t">Youthforia's Blackface Foundation</a></li>
             <li><a href="https://www.youtube.com/watch?v=7M1MQRrvh1M&t">dropout CHAOS but i REFUSE to show you a white man</a></li>
@@ -121,7 +168,7 @@
           </ul></td>
           
           <!-- WEB ANIMATIONS !-->
-          <td><ul class="media">
+          <td><ul class="media anim">
             <li><a href="https://www.youtube.com/watch?v=f-4Vowi55b0">"I Am A Fish"</a></li>
             <li><a href="https://www.youtube.com/watch?v=rBTN3pLfAIU">The Pretty Duckling 🦆</a></li>
             <li><a href="https://www.youtube.com/watch?v=dSc27JPm3r8">Milky☆Highway</a></li>
@@ -144,7 +191,7 @@
         </tr>
         <tr>
           <!-- TTRPG SHOWS !-->
-          <td><ul class="media">
+          <td><ul class="media ttrpg">
             <li><a href="https://www.dropout.tv/dimension-20-a-court-of-fey-flowers">A Court of Fey and Flowers</a></li>
             <li><a href="https://www.dropout.tv/dimension-20-mentopolis">Mentopolis</a></li>
             <li><a href="https://www.twitch.tv/collections/-FyKZfINDBXKHg?filter=collections">Ebon Ward</a></li>
@@ -156,7 +203,7 @@
           </ul></td>
           
           <!-- CARTOONS !-->
-          <td><ul class="media">
+          <td><ul class="media cartoon">
             <li>Ben 10</li>
             <li>Moon Girl and Devil Dinosaur </li>
             <li>Inside Job</li>
@@ -167,7 +214,7 @@
           </ul></td>
           
           <!-- MISC. !-->
-          <td><ul class="media">
+          <td><ul class="media misc>
             <li><a href="https://www.youtube.com/watch?v=JbciZAlYUt0">Lagtrain but its Congruent Angles</a></li>
             <li><a href="https://www.youtube.com/watch?v=xmWybnLOPnA">Tax Time!❤️</a></li>
             <li><a href="https://nightframes.itch.io/the-true-story-of-the-agujero">AGUJERO</a></li>
@@ -184,7 +231,7 @@
 
     <img id="PagedollImage" alt="Pagedoll" src="images/pagedoll/img0.png">
       <script>
-        document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 12) + ".png";
+        document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 11) + ".png";
       </script>
     </div>
   </body>
