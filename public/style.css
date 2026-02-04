@@ -157,13 +157,6 @@ Links outside the nav-element will NOT be affected by this */
     text-decoration: none;
 }
 
-.updates {
-    height: 400px;
-    overflow: auto;
-    border: 1px var(--divider) dotted;
-    background-color: var(--aside);
-}
-
 .mainmedia {
     grid-area: main;
     background-color: var(--main);
@@ -174,8 +167,21 @@ Links outside the nav-element will NOT be affected by this */
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. 
 We have a human magician, a human ranger, and an elf ranger. The humans share ids while the rangers share class.*/
 
-/* the id will overwrite any styling done to the standard element, as long as you include id="value". 
-In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
+/* the id will overwrite any styling done to the standard element, as long as you include id="value". In that way, you can have different font-colors, different font-sizes, or different background-colors for different webpages, all while refering to a single css sheet.*/
+#updates {
+    height: 300px;
+    overflow: auto;
+    border: 2px var(--divider) dotted;
+    margin: 2%;
+    padding: 5px;
+    background: var(--aside);
+}
+#updates p{
+    margin-bottom: 3%;
+    background: var(--main);
+    padding: 5px;
+}
+
 #PagedollImage {
     height:30vmin; 
     right: 2px;
@@ -186,14 +192,26 @@ In that way, you can have different font-colors, different font-sizes, or differ
     transition: transform 1.7s ease;
     }
 /* just like with the navigation links before, which was a class changing under certain conditions, so too can an id change under those same conditions. 
-Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to tilt when hovered over. */
+Once again, we here have something change when the mouse hovers over it. This time, I instead want the images with this id to spin on itself when hovered over. */
 #PagedollImage:hover {
     transform: rotateY(360deg);
     }
 
-/* This section is for any custom fonts you may want. 
-You can find various fonts online. Google has it's own collection of fonts, and has the benefit that you can directly import fonts from that site. 
-There's no need to host the font yourself, though it is still recommended for the sake of preserving online media. 
+#button {
+    position: relative;
+    background-color: var(--main);
+    border: 1px var(--divider) dotted;
+    padding: 5px;
+    bottom: 8px;
+    border-radius: 10px;
+    }
+#button img{
+    max-height: 31px;
+    width: auto;
+    }
+
+/* This section is for any custom fonts you may want 
+You can find various fonts online. Google has it's own collection of fonts, and has the benefit that you can directly import fonts from that site. There's no need to host the font yourself, though it is still recommended for the sake of preserving online media. 
 I have chosen to host my font on my own neocities site. Thus, I only need to refer to the folder they exist in, rather than the website they're hosted on. */
 @font-face {
     font-family: 'Kodchasan';
