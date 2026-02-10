@@ -88,10 +88,8 @@ h3 {
 /* Here, we're editing each individual block/class, such that they have a unique appearance that'll make them easier to tell apart visually. */
 .header { 
     grid-area: header;
-    background-color: #070102;
-    background-image: var(--header-image);
-    background-size: contain;
-    background-repeat: space;
+    background-color: var(--third); 
+    text-align: center;
 }
     
 .nav { 
@@ -159,44 +157,51 @@ Links outside the nav-element will NOT be affected by this */
 
 .mainmedia {
     display: grid;
-    grid-area: main;
-    grid-template-columns: auto auto auto;
+    grid-auto-flow: row; 
+    grid-template-columns: 33% 33% 33%; 
     grid-template-rows: auto auto auto;
-    gap: 1rem 0rem 1rem 0rem;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "medtop medtop medtop"
-    "medmid medmid medmid"
-    "medbot medbot medbot";
+    grid-template-areas: 
+        "medtop medtop medtop"
+        "medmid medmid medmid"
+        "medbot medbot medbot"; 
+    justify-content: center; 
+    align-content: center;
     background-color: var(--main);
     padding: 1rem 0rem 1rem 0rem;
 }
-.creator, .long, .semi, .mid, .short, .anim, .ttrpg, .cartoon, .misc {
-      table {
-        border-collapse: collapse;
-        margin-bottom: 1rem;
-        width: 100%;
-      }
-      th {
-        background-color: var(--third);
-        border-width: 1px;
-        border-style: solid;
-        border-color: var(--main);
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      td {
-        background-color: var(--aside);
-        border-width: 1px;
-        border-style: solid;
-        border-color: var(--main);
-      }
 
-      ul.media {
-            list-style-type: none;
-            padding: 5px;
-      }
-    }
+.marquee {
+    position: relative;
+    background-color: var(--main);
+    border: 1px var(--divider) dotted;
+    width: auto;
+    height: 40px;
+    overflow: hidden;
+    padding: 2px;
+    bottom: 8px;
+    border-radius: 10px;
+}
+
+.scroll {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    /* edit the time variable inline. Make sure to include the unit (such as s for seconds) in the inline as well.*/
+    animation: scroll var(--time) linear infinite;
+}
+/* When hovered with a mouse, the scroll will pause movement. This is optional*/
+.scroll:hover {
+    animation-play-state: paused;
+}
+
+/* To ensure smooth scrolling, you need to edit the values as best fits, IN you inline scroll (aka not here in the css sheet).
+To make it easier have a temporary, unique 'start' and 'end' item.
+Use the 'end' item to track when the animation restarts into 'start'.*/
+@keyframes scroll {
+    from { transform: translateX(var(--from-width)); }
+    to { transform: translateX(var(--to-width)); }
+}
+
 
 /* Similarly as class, id can be used to categorize elements once more, this time with the value id="value".
 Continuing the RPG metaphor, ids are secondary characterics, let's say species/races here. 
