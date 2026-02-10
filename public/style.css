@@ -177,7 +177,7 @@ Links outside the nav-element will NOT be affected by this */
     width: auto;
     height: 40px;
     overflow: hidden;
-    padding: 2px;
+    padding: 4px;
     bottom: 8px;
     border-radius: 10px;
 }
@@ -192,6 +192,10 @@ Links outside the nav-element will NOT be affected by this */
 /* When hovered with a mouse, the scroll will pause movement. This is optional*/
 .scroll:hover {
     animation-play-state: paused;
+}
+.scroll img{
+    max-height: 31px;
+    width: auto;
 }
 
 /* To ensure smooth scrolling, you need to edit the values as best fits, IN you inline scroll (aka not here in the css sheet).
