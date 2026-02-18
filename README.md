@@ -1,4 +1,4 @@
-Github Repor of the code for
+Github Repo of the code for
 [venomoustia.neocities.org](https://venomoustia.neocities.org)
 [Neocities profile](https://neocities.org/site/venomoustia)
 
