@@ -6,7 +6,6 @@ Github Repo of the code for
 
 
 Made up of .html, .css, and .js
-
 Written in Visual Studio Code
 
 
