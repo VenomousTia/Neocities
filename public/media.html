@@ -9,9 +9,22 @@
          This makes it easier to make new pages for your site. -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <style>
+      .mainmedia {
+          display: grid;
+          grid-auto-flow: row;
+          grid-template-rows: auto;
+          grid-template-areas: 
+              "medtop medtop medtop"
+              "medmid medmid medmid"
+              "medbot medbot medbot"; 
+          justify-content: center; 
+          align-content: center;
+          background-color: var(--main);
+          padding: 1rem 0rem 1rem 0rem;
+      }
+
       table {
         border-collapse: collapse;
-        margin-bottom: 1rem;
         width: 100%;
       }
 
@@ -36,17 +49,12 @@
             list-style-type: none;
       }
 
-      /* Refering to ul.media means that any unordered list (ul) with specifically the "media" class will be the only ones affected by these stylings. 
-      Thus, the lists on the 'MEDIA' page are unique.*/
-        ul li {
-          padding-bottom: 2px;
-        }
-        /* By extension, "ul.media li" will look at list items (li) that exist only inside unordered lists with the "media" class. 
-        Here, this is done to create space between each list item, for better readability.*/
+      ul li {
+        padding-bottom: 2px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
     <div class="header"></div>
     <div class="nav">
       <ul>
@@ -63,8 +71,8 @@
       <table>
         <tr>
           <th><strong>⚞CONTENT CREATORS⚟</strong></th>
-          <th><strong>⚞LONG FORM ESSAYS⚟</strong> <em>(ca. 1hr+)</em></th>
-          <th><strong>⚞SEMI-LONG FORM ESSAYS⚟</strong> <em>(30-50min)</em></th>
+          <th><strong>⚞LONG FORM ESSAYS⚟</strong> <br><em>(ca. 1hr+)</em></th>
+          <th><strong>⚞SEMI-LONG FORM ESSAYS⚟</strong> <br><em>(30-50min)</em></th>
         </tr>
         
         <tr>
@@ -119,8 +127,8 @@
           </ul></td>
         </tr>
         <tr>
-          <th><strong>⚞MEDIUM ESSAYS⚟</strong> <em>(15-30min)</em></th>
-          <th><strong>⚞SHORT ESSAYS⚟</strong> <em>(Sub 15min)</em></th>
+          <th><strong>⚞MEDIUM ESSAYS⚟</strong> <br><em>(15-30min)</em></th>
+          <th><strong>⚞SHORT ESSAYS⚟</strong> <br><em>(Sub 15min)</em></th>
           <th><strong>⚞WEB-ANIMATIONS⚟</strong></th>
         </tr>
         <tr>

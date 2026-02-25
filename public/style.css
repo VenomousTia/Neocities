@@ -155,21 +155,6 @@ Links outside the nav-element will NOT be affected by this */
     text-decoration: none;
 }
 
-.mainmedia {
-    display: grid;
-    grid-auto-flow: row; 
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "medtop medtop medtop"
-        "medmid medmid medmid"
-        "medbot medbot medbot"; 
-    justify-content: center; 
-    align-content: center;
-    background-color: var(--main);
-    padding: 1rem 0rem 1rem 0rem;
-}
-
 .marquee {
     position: relative;
     background-color: var(--main);
