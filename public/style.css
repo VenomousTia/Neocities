@@ -84,6 +84,11 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+ul {
+    list-style-type: none;
+    padding-left: 1.5em;
+    line-height: 1.5;
+}
 
 /* Here, we're editing each individual block/class, such that they have a unique appearance that'll make them easier to tell apart visually. */
 .header { 
