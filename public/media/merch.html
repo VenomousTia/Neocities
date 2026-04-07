@@ -1,11 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Merch</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+
+    .merchimg{
+        display: none;
+    }
+    .merchimg:target {
+        max-width: 95%;
+        margin:0 auto;
+        display: block;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+    .aside {
+        width: 250px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "main1 main2";
+        grid-area: main;
+        background-color: var(--main);
+        padding: 1rem 1rem 2rem 1rem;
+        overflow: auto;
+    }
+    .main1 {
+        grid-area: main1;
+    }
     
+    .main1 img {
+        width:125px; /* this sets the width for every image */
+        height:125px; /* this sets the height for every image. Try setting it to 'auto' and see how it looks weird since every image has a slightly different height? */
+        object-fit:cover; /* this crops the image so they are all the same size. This might be an issue if you have landscape AND portrait images. Feel free to take this property out temporarily to see exactly what it does! */
+    }
+    /* this resizes the image on hover. note that objects in 'portrait'  */
+    .main1 img:hover {
+        transform:scale(1.75); /* this scales up the image when you hover over it */
+        object-fit:contain; /* this keeps the aspect ratio of the original images*/
+    }
+
+    .main2 {
+        grid-area: main2;
+    }
+
+    .bigimage {
+        height:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+  </style>
+ </head>
+<body>
+<div class="container">
+    <div class="header" style="height:60px;">
+
+      <div class="marquee">
+        <div class="scroll" style="--from-width:0%; --to-width:-167%; --time:15s">
+
+          <!-- Marquee Start -->
+          <span>
+            <img src="images/blinkies-buttons-badges/buttons/a13.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1share.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1html.png">
+            <img src="images/blinkies-buttons-badges/buttons/1neo34.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1love.png">
+            <img src="images/blinkies-buttons-badges/buttons/1advise.gif">
+            <img src="images/blinkies-buttons-badges/buttons/steam.gif">
+            <img src="images/blinkies-buttons-badges/buttons/tiredalien2.gif">
+            <img src="images/blinkies-buttons-badges/buttons/duck.gif">
+            <img src="images/blinkies-buttons-badges/buttons/ac-button-phil.gif">
+            <img src="images/blinkies-buttons-badges/buttons/asexuals_now.gif">
+            <img src="images/blinkies-buttons-badges/buttons/beyes.gif">
+            <img src="images/blinkies-buttons-badges/buttons/nofuckingthanks.gif">
+            <img src="images/blinkies-buttons-badges/buttons/rainbow_bev.gif">
+            <img src="images/blinkies-buttons-badges/buttons/queercoded.png">
+            <img src="images/blinkies-buttons-badges/buttons/3passion.jpg">
+            <img src="images/blinkies-buttons-badges/buttons/1wiki.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1bw30.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1bw5.gif">
+            <img src="images/blinkies-buttons-badges/buttons/transnow2.gif">
+            <img src="images/blinkies-buttons-badges/buttons/a13.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1share.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1html.png">
+            <img src="images/blinkies-buttons-badges/buttons/1neo34.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1love.png">
+            <img src="images/blinkies-buttons-badges/buttons/1advise.gif">
+            <img src="images/blinkies-buttons-badges/buttons/steam.gif">
+            <img src="images/blinkies-buttons-badges/buttons/tiredalien2.gif">
+            <img src="images/blinkies-buttons-badges/buttons/duck.gif">
+            <img src="images/blinkies-buttons-badges/buttons/ac-button-phil.gif">
+            <img src="images/blinkies-buttons-badges/buttons/asexuals_now.gif">
+            <img src="images/blinkies-buttons-badges/buttons/beyes.gif">
+            <img src="images/blinkies-buttons-badges/buttons/nofuckingthanks.gif">
+            <img src="images/blinkies-buttons-badges/buttons/rainbow_bev.gif">
+            <img src="images/blinkies-buttons-badges/buttons/queercoded.png">
+            <img src="images/blinkies-buttons-badges/buttons/3passion.jpg">
+            <img src="images/blinkies-buttons-badges/buttons/1wiki.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1bw30.gif">
+            <img src="images/blinkies-buttons-badges/buttons/1bw5.gif">
+            <img src="images/blinkies-buttons-badges/buttons/transnow2.gif">
+          </span>
+          <!-- Marquee End -->
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="nav" style="height: 60px;">
+      <ul>
+        <li><a href="/home.html">HOME</a></li>
+        <li><a href="/art/gallery.html">ART</a></li>
+        <li><a href="/not_found.html">GAMES</a></li>
+        <li><a href="/media/recs.html">MEDIA</a></li>
+        <li><a href="/kitsy.html">KITSY</a></li>
+        <li><a href="/sources.html">SOURCES</a></li>
+      </ul>
+    </div>
+    
+    <div class="aside">
+        <h3 style="margin-bottom:10px">Merch</h3> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="main">
+        <div class="main1">
+                <a href="#merch1"><img class="pics" src="img"></a>
+                <a href="#merch2"><img class="pics" src="img"></a>
+                <a href="#merch3"><img class="pics" src="img"></a>
+                <a href="#merch4"><img class="pics" src="img"></a>
+                <a href="#merch5"><img class="pics" src="img"></a>
+                <a href="#merch6"><img class="pics" src="img"></a>
+                <a href="#merch7"><img class="pics" src="img"></a>
+                <a href="#merch8"><img class="pics" src="img"></a>
+                <a href="#merch9"><img class="pics" src="img"></a>
+        </div>
+
+        <div class="main2">
+            <div class="merchimg" id="merch1">
+                <h3>TITLE1</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="merchimg" id="merch2">
+                <h3>TITLE2</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="merchimg" id="merch3">
+                <h3>TITLE3</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="merchimg" id="merch4">
+                <h3>TITLE4</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="merchimg" id="merch5">
+                <h3>TITLE5</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="merchimg" id="merch6">
+                <h3>TITLE6</h3>
+                    <p>Creator: <a href="link">creator link</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+      <!-- Marquee Start -->
+      <div class="marquee">
+        <div class="scroll" style="--from-width:100%; --to-width:-110%; --time:18s;">
+          <a href="https://bettysgraphics.neocities.org/"><img alt="Betty's Graphics Button" src="images/scroll/bettysgraphics.gif"></a>
+          <a href="https://crouton.net/"><img alt="Crouton.net Button" src="images/scroll/crouton.png"></a>
+          <a href="https://dustedpink.neocities.org"><img alt="Dustedpink Button" src="images/scroll/dustedpink.png"></a>
+          <a href="https://dollzrevival.neocities.org/"><img alt="Dollz Revival Button" src="images/scroll/DZRButton4.gif"></a>
+          <a href="https://koy.fish/"><img alt="Koy Boi Button" src="images/scroll/kb.png"></a>
+          <a href="https://lucida.to"><img alt="Lucida Button" src="images/scroll/88x31.gif"></a>
+          <a href="https://gamersagainstthemachine.neocities.org"><img alt="GamersAgainstTheMachine Button" src="images/scroll/gamersagainstbuttoncrop.gif"></a>
+          <a href="https://acoldghostlypresence.neocities.org"><img alt="Graveuard Chronicles Button" src="images/scroll/Graveyard-chronicles-button-20240317101902.png"></a>
+          <a href="https://fustilugz.neocities.org"><img alt="Fustilugz Button" src="images/scroll/ME BUT SMALLer.gif"></a>
+          <a href="https://sadgrl.online/"><img alt="Sadgrl Archive Button" src="images/scroll/sadgrlonline.gif"></a>
+          <a href="https://vurren.neocities.org/"><img alt="Vurren Archive Button" src="images/scroll/vurren.gif"></a>
+          <a href="https://venomoustia.neocities.org"><img alt="VenomousTia Button" src="images/scroll/venomoustia.gif"></a>
+        </div>
+      </div>
+      <!-- Marquee End -->
+
+    </div>
+
+<img id="PagedollImage" class= "hideonphone" alt="Pagedoll" src="images/pagedoll/img0.png">
+<script>
+  document.getElementById("PagedollImage").src = "images/pagedoll/img" + Math.floor(Math.random() * 12) + ".png";
+</script>
+</div>
 </body>
-</html>

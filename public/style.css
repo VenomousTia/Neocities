@@ -9,6 +9,9 @@ You can make a universal design for your website, by using a single external she
     /* In the :root area, you're able to rename different values/variables used throughout the css file. Thus, you can refer to these values by the given name instead. 
     You rename your variables by adding -- in front of the given name. You refer to the variables in the code itself with: var(--name) */
 
+    /* Coming from sadgrl's layout maker, this variables refer to an image by name instead of a url-link. These work well for background images that repeat throughout your site */
+    --body-bg-image: url('images/spacebackground.png');
+
     /* These variables allow you to change the color of multiple elements in an instant */
     --main: #222639;
     --aside: #374153;
@@ -16,10 +19,6 @@ You can make a universal design for your website, by using a single external she
     --text: #f0f1ea;
     --title: #b7ffe8;
     --divider: #A7D8F1;
-
-    /* Coming from sadgrl's layout maker, these variables refer to images by name instead of a url-link. These work well for background images that repeat throughout your site */
-    --header-image: url('/images/VRC4.png');
-    --body-bg-image: url('images/spacebackground.png');
 }
 
 * {
@@ -105,10 +104,22 @@ ul {
 }
 
 .main {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main1 main2";
+
     grid-area: main;
     background-color: var(--main);
     padding: 1rem 1rem 2rem 1rem;
     overflow: auto;
+}
+.main1 {
+    grid-area: main1;
+}
+.main2 {
+    grid-area: main2;
 }
 
 .aside {
