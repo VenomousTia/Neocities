@@ -17,7 +17,6 @@
     <!-- Why use <div> instead of designated blocks like <header> or <footer>? Because of the ease in styling them in the CSS sheet using GRIDS!! It's a lot easier to edit the class than the entire block itself. We'll go into grids in the CSS sheet. -->
   <div class="container">
     <div class="header hideonphone">
-      
       <!-- Marquee Start -->
       <div class="marquee">
         <div class="scroll" style="--from-width:0%; --to-width:-167%; --time:15s">
@@ -67,7 +66,6 @@
         </div>
       </div>
       <!-- Marquee End -->
-
     </div>
 
     <div class="nav">
@@ -75,7 +73,13 @@
             <li><a href="/home.html">HOME</a></li>
             <li><a href="/art/gallery.html">ART</a></li>
             <li><a href="/not_found.html">GAMES</a></li>
-            <li><a href="/media/recs.html">MEDIA</a></li>
+            <li class="dropdown"><a href="">MEDIA</a>
+              <div class="dropdown-content">
+                <a href="/media/recs.html">Recs</a>
+                <a href="/media/merch.html">Merch</a>
+                <a href="/media/dice.html">Dice</a>
+              </div>
+            </li>
             <li><a href="/kitsy.html">KITSY</a></li>
             <li><a href="/sources.html">SOURCES</a></li>
         </ul>

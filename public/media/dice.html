@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTia</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
     #dndmain {
       background-color: #354559;
@@ -24,6 +24,7 @@
     }
       
     .main {
+      display: block;
       overflow: visible;
     }
 
@@ -43,19 +44,16 @@
         <li><a href="/home.html">HOME</a></li>
         <li><a href="/art/gallery.html">ART</a></li>
         <li><a href="/not_found.html">GAMES</a></li>
-        <li><a href="/media.html">MEDIA</a></li>
-        <li><a href="/ttrpgs.html">TTRPGS</a></li>
+          <li class="dropdown"><a href="">MEDIA</a>
+            <div class="dropdown-content">
+              <a href="/media/recs.html">Recs</a>
+              <a href="/media/merch.html">Merch</a>
+              <a href="/media/dice.html">Dice</a>
+            </div>
+          </li>
+        <li><a href="/kitsy.html">KITSY</a></li>
         <li><a href="/sources.html">SOURCES</a></li>
     </ul>
-  </div>
-
-  <div class="aside">
-    <ul>
-      <li>Dice</li>
-      <li>Section 2</li>
-      <li>Section 3</li>
-    </ul>
-    <p>Interactions TBA</p>
   </div>
 
   <div class="main">

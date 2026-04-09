@@ -171,6 +171,26 @@ Links outside the nav-element will NOT be affected by this */
     text-decoration: none;
 }
 
+.nav li.dropdown {
+    display: inline;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--third);
+    border-style: dotted solid double;
+    border-width: 2px;
+    border-color: var(--divider);
+    padding: 5px 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.nav li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .marquee {
     position: relative;
     background-color: var(--main);
