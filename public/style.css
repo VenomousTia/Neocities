@@ -126,6 +126,8 @@ ul {
     grid-area: aside;
     background-color: var(--aside);
     display: block;
+    min-width: 250px;
+    max-width: 250px;
 }
 
 .footer { 
