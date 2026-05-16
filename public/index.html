@@ -1,41 +1,48 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTia</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <style>            
-          #box{
-            background-color: #222639;
-            border: 1px solid #A7D8F1;
-            height: auto;
-            width: 350px;
-            padding:10px;
-            text-align: center;
-            margin: auto;
-            }
-            
-            #title{
-              color: white;
-              width: 300px;
-              margin: auto;
-              margin-top: 50px;
-              letter-spacing: 10px;
-              text-align: center;
-              }
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTiaTia</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <style>            
+        .box{
+          background-color: #222639;
+          border: 1px solid #A7D8F1;
+          height: auto;
+          width: 400px;
+          padding:10px;
+          text-align: center;
+          margin: auto;
+          }
+          
+        .title{
+          color: white;
+          width: 300px;
+          margin: auto;
+          margin-top: 50px;
+          letter-spacing: 10px;
+          text-align: center;
+          }
+
+        .float {
+          animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
       </style>
     </head> 
     
     <body>
 
-      <div id="main">
+      <div>
         
-        <h1 id="title">WELCOME</h1>
-        <a href="/home.html"><img src="images/tatatatia.png" alt="Home Site" style="display: block; margin: 0 auto;"></a>
-        <div id="box">
-          <h3>CLICK THE IMAGE TO ENTER</h3>
-          <a href="https://www.mabsland.com/Adoption.html"><img alt="Button" src="images/scroll/Censor_Mc.gif"></a>
+        <h1 class="title">WELCOME</h1>
+        <a href="/home.html"><img class="float" src="images/tatatatia.png" alt="Home Site" style="display: block; margin: 0 auto;"></a>
+        <div class="box">
+          <h3>^ CLICK TO ENTER ^</h3>
+          <a href="https://www.mabsland.com/Adoption.html"><img alt="Mabslab MC Button" src="images/scroll/Censor_Mc.gif"></a>
+          <a href="https://venomoustia.neocities.org/"><img alt="VenomousTia Button" src="images/scroll/venomoustia.gif"></a>
         </div>
 
       </div>
