@@ -6,25 +6,21 @@
     <title>Document</title>
     <style>
         .marquee {
-          position: relative;
-          background-color: #222639;
-          border: 1px #A7D8F1 dotted;
-          height: 40px;
-          overflow: hidden;
-          width: 100%;
-          right: 8px;
-          bottom: 8px;
-          border-radius: 10px;
-          margin: 0;
+            position: relative;
+            height: 40px;
+            overflow: hidden;
+            width: 100%;
+            right: 8px;
+            bottom: 8px;
+            margin: 0;
         }
 
         .scroll {
-          width: max-content;
-          display: block;
-          position: absolute;
-          white-space: nowrap;
-          /* edit the time variable inline. Make sure to include the unit (such as s for seconds) in the inline as well.*/
-          animation: scroll var(--time) linear infinite;
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            /* edit the time variable inline. Make sure to include the unit (such as s for seconds) in the inline as well.*/
+            animation: scroll var(--time) linear infinite;
         }
         /* When hovered with a mouse, the scroll will pause movement. This is optional*/
         .scroll:hover {
@@ -48,7 +44,7 @@
     
   <!-- Header Marquee Start -->
   <div class="marquee">
-    <div class="scroll" style="--from-width:0%; --to-width:-120%; --time:15s">
+    <div class="scroll" style="--from-width:0%; --to-width:-50%; --time:12.5s">
       <span>
         <img src="images/blinkies-buttons-badges/buttons/a13.gif">
         <img src="images/blinkies-buttons-badges/buttons/1share.gif">
