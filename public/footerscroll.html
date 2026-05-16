@@ -7,13 +7,15 @@
     <style>
         .marquee {
             position: relative;
-            background-color: var(--main);
-            border: 1px var(--divider) dotted;
-            width: auto;
+            background-color: #222639;
+            border: 1px #A7D8F1 dotted;
             height: 40px;
             overflow: hidden;
+            width: 100%;
+            right: 8px;
             bottom: 8px;
             border-radius: 10px;
+            margin: 0;
         }
 
         .scroll {
@@ -41,9 +43,10 @@
         }
     </style>
 </head>
-<body class="marquee">
+<body>
     <!-- Footer Marquee Start-->
-        <div class="scroll" style="--from-width:0%; --to-width:-100%; --time:18s; width:max-content;">
+    <div class="marquee">
+        <div class="scroll" style="--from-width:0%; --to-width:-50%; --time:8s;">
             
             <span>
             <a href="https://bettysgraphics.neocities.org/"><img alt="Betty's Graphics Button" src="images/scroll/bettysgraphics.gif"></a>
@@ -78,6 +81,7 @@
             </span>
 
         </div>
+    </div>
     <!-- Footer Marquee End -->
 </body>
 </html>

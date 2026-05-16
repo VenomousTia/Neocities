@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .marquee {
+          position: relative;
+          background-color: #222639;
+          border: 1px #A7D8F1 dotted;
+          height: 40px;
+          overflow: hidden;
+          width: 100%;
+          right: 8px;
+          bottom: 8px;
+          border-radius: 10px;
+          margin: 0;
+        }
+
         .scroll {
           width: max-content;
           display: block;
@@ -34,6 +47,7 @@
 <body>
     
   <!-- Header Marquee Start -->
+  <div class="marquee">
     <div class="scroll" style="--from-width:0%; --to-width:-120%; --time:15s">
       <span>
         <img src="images/blinkies-buttons-badges/buttons/a13.gif">
@@ -82,6 +96,7 @@
       </span>
       
     </div>
+  </div>
   <!-- Header Marquee End -->
 
 </body>
