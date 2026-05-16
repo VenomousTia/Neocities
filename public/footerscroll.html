@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marquee {
+            position: relative;
+            background-color: var(--main);
+            border: 1px var(--divider) dotted;
+            width: auto;
+            height: 40px;
+            overflow: hidden;
+            padding: 4px;
+            bottom: 8px;
+            border-radius: 10px;
+        }
+
+        .scroll {
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            /* edit the time variable inline. Make sure to include the unit (such as s for seconds) in the inline as well.*/
+            animation: scroll var(--time) linear infinite;
+        }
+        /* When hovered with a mouse, the scroll will pause movement. This is optional*/
+        .scroll:hover {
+            animation-play-state: paused;
+        }
+        .scroll img{
+            max-height: 31px;
+            width: auto;
+        }
+
+        /* To ensure smooth scrolling, you need to edit the values as best fits, IN you inline scroll (aka not here in the css sheet).
+        To make it easier have a temporary, unique 'start' and 'end' item.
+        Use the 'end' item to track when the animation restarts into 'start'.*/
+        @keyframes scroll {
+            from { transform: translateX(var(--from-width)); }
+            to { transform: translateX(var(--to-width)); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Footer Marquee Start-->
+        <div class="marquee">
+        <div class="scroll" style="--from-width:105%; --to-width:-140%; --time:18s;">
+            <span>
+            <a href="https://bettysgraphics.neocities.org/"><img alt="Betty's Graphics Button" src="images/scroll/bettysgraphics.gif"></a>
+            <a href="https://crouton.net/"><img alt="Crouton.net Button" src="images/scroll/crouton.png"></a>
+            <a href="https://dustedpink.neocities.org"><img alt="Dustedpink Button" src="images/scroll/dustedpink.png"></a>
+            <a href="https://dollzrevival.neocities.org/"><img alt="Dollz Revival Button" src="images/scroll/DZRButton4.gif"></a>
+            <a href="https://itsdida.neocities.org" target="_blank"><img src="https://itsdida.neocities.org/images/itsdida.png" alt="itsdida Button"/></a>
+            <a href="https://koy.fish/"><img alt="Koy Boi Button" src="images/scroll/kb.png"></a>
+            <a href="https://lucida.to"><img alt="Lucida Button" src="images/scroll/88x31.gif"></a>
+            <a href="https://gamersagainstthemachine.neocities.org"><img alt="GamersAgainstTheMachine Button" src="images/scroll/gamersagainstbuttoncrop.gif"></a>
+            <a href="https://acoldghostlypresence.neocities.org"><img alt="Graveuard Chronicles Button" src="images/scroll/Graveyard-chronicles-button-20240317101902.png"></a>
+            <a href="https://fustilugz.neocities.org"><img alt="Fustilugz Button" src="images/scroll/ME BUT SMALLer.gif"></a>
+            <a href="https://sadgrl.online/"><img alt="Sadgrl Archive Button" src="images/scroll/sadgrlonline.gif"></a>
+            <a href="https://vurren.neocities.org/"><img alt="Vurren Archive Button" src="images/scroll/vurren.gif"></a>
+            <a href="https://venomoustia.neocities.org"><img alt="VenomousTia Button" src="images/scroll/venomoustia.gif"></a>
+            </span>
+        </div>
+        </div>
+    <!-- Footer Marquee End -->
+</body>
+</html>
