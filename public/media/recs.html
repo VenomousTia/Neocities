@@ -62,22 +62,29 @@
 
     </div>
     
-    <div class="nav" style="height: 60px;">
-      <ul>
-        <li><a href="/home.html">HOME</a></li>
-        <li><a href="/art/gallery.html">ART</a></li>
-        <li><a href="/not_found.html">GAMES</a></li>
-            <li class="dropdown"><a href="">MEDIA</a>
+    <div class="nav">
+
+        <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="/art/gallery.html">ART</a></li>
+            <li><a href="/not_found.html">GAMES</a></li>
+            <li class="dropdown">MEDIA
               <div class="dropdown-content">
                 <a href="/media/recs.html">Recs</a>
                 <a href="/media/merch.html">Merch</a>
                 <a href="/media/dice.html">Dice</a>
               </div>
             </li>
-        <li><a href="/kitsy.html">KITSY</a></li>
-        <li><a href="/sources.html">SOURCES</a></li>
-      </ul>
+            <li><a href="/kitsy.html">KITSY</a></li>
+            <li class="dropdown"><a href="/sources.html">SOURCES</a>
+              <div class="dropdown-content">
+                <a href="sitemap.html">Sitemap</a>
+              </div>
+            </li>
+        </ul>
+
     </div>
+
     <div class="mainmedia">
     <!-- MAIN CONTENT !-->
       <table>
@@ -123,6 +130,8 @@
             <li><a href="https://www.youtube.com/watch?v=iGK1Oll7jZ4">We need to talk about Gamer Girl Fascism</a></li>
             <li><a href="https://www.youtube.com/watch?v=j16KLFMv_yQ">I Played a Game with Matthew Mercer and Had a Panic Attack</a></li>
             <li><a href="https://www.youtube.com/watch?v=r7uCUi5Bv6k">Everything is Gambling Now</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fnNCHwIiTB0">Dendron 64: A Lost Game With A Terrible Secret</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7A9cQ86pQXM">Killing Nazis Isn't Woke — The History and Politics of the Wolfenstein Trilogy</a></li>
           </ul></td>
           
           <!-- SEMI-LONG FORM ESSAYS 30-50 MIN !-->
@@ -160,6 +169,7 @@
             <li><a href="https://www.youtube.com/watch?v=uz0oUJZ5t30">He Understood The Assignment | Vanity Fair's White House Feature by Christopher Anderson</a></li>
             <li><a href="https://www.youtube.com/watch?v=D0PjLvlBsWw">Making giant insects to spite evolution</a></li>
             <li><a href="https://www.youtube.com/watch?v=NEDFUjqA1s8">Poisoning AI with ".аss" subtitles</a></li>
+            <li><a href="https://www.youtube.com/watch?v=z8AN4Flifgg">A Cop groomed a highschooler....and Lin-Manuel Miranda wrote a musical about it</a></li>
           </ul></td>
           
           <!-- SHORT ESSAYS UNDER 15 MIN !-->
@@ -228,12 +238,16 @@
             <li><a href="https://www.youtube.com/watch?v=kvxCU_lQwKM">Cat Meows Underwater</a></li>
             <li><a href="https://www.justfuckingcode.com/">Just fucking code.</a></li>
             <li><a href="https://www.youtube.com/watch?v=2SIEOYOuX4s">The Slur Song</a></li>
+            <li><a href="https://www.youtube.com/watch?v=u4ecB57jFhI">shrimp quartet</a></li>
+            <li><a href="https://www.youtube.com/watch?v=DIfi9wDDpUQ">Low Key Gliding - extended</a></li>
+            <li><a href="https://www.justfuckingcode.com/">Just fucking code.</a></li>
+            <li><a href="https://wer8888.itch.io/horse-magnifier">horse magnifier</a></li>
           </ul></td>
         </tr>
       </table>
     </div>
 
-    <img id="PagedollImage" alt="Pagedoll" src="/images/pagedoll/img0.png">
+    <img id="PagedollImage" class= "hideonphone" alt="Pagedoll" src="/images/pagedoll/img0.png">
       <script>
         document.getElementById("PagedollImage").src = "/images/pagedoll/img" + Math.floor(Math.random() * 11) + ".png";
       </script>
