@@ -7,27 +7,29 @@
     <loc>https://venomoustia.neocities.org/home</loc>
   </url>
   <url>
-    <loc>https://venomoustia.neocities.org/art/gallery</loc>
-  </url>
-  <url>
-    <loc>https://venomoustia.neocities.org/gamelog/gamelog</loc>
-  </url>
-  <url>
-    <loc>https://venomoustia.neocities.org/gamelog/gamelogwip</loc>
-  </url>
-  <url>
     <loc>https://venomoustia.neocities.org/not_found</loc>
   </url>
   <url>
-    <loc>https://venomoustia.neocities.org/media</loc>
+    <loc>https://venomoustia.neocities.org/sources</loc>
   </url>
   <url>
     <loc>https://venomoustia.neocities.org/sitemap</loc>
   </url>
+
   <url>
-    <loc>https://venomoustia.neocities.org/ttrpgs</loc>
+    <loc>https://venomoustia.neocities.org/art/gallery</loc>
+  </url>
+
+  <url>
+    <loc>https://venomoustia.neocities.org/media/dice</loc>
   </url>
   <url>
-    <loc>https://venomoustia.neocities.org/dressthattyrant</loc>
+    <loc>https://venomoustia.neocities.org/media/merch</loc>
+  </url>
+  <url>
+    <loc>https://venomoustia.neocities.org/media/recs</loc>
+  </url>
+  <url>
+    <loc>https://venomoustia.neocities.org/kitsy</loc>
   </url>
 </urlset>
